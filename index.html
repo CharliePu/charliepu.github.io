@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Huanzhi Pu — Georgia Tech</title>
+  <meta name="description" content="Huanzhi Pu — Computer Science Ph.D. student at Georgia Institute of Technology (HPArch Lab). Research in GPU architecture, GPU/ML compilers, and binary analysis." />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    (function () {
+      const saved = localStorage.getItem("theme");
+      if (saved === "dark" || (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div class="container">
+    <nav class="topbar">
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#research">Research</a>
+        <a href="#education">Education</a>
+        <a href="#teaching">Teaching</a>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
+        Theme
+      </button>
+    </nav>
+
+    <header class="profile-header" id="about">
+      <div class="profile-info">
+        <h1 class="profile-name">Huanzhi Pu</h1>
+        <p class="profile-subtitle">Ph.D. Student in Computer Science</p>
+        <p class="profile-affiliation">
+          <a href="https://hparch.gatech.edu/" target="_blank" rel="noopener">HPArch Lab</a>,
+          Georgia Institute of Technology
+        </p>
+        <div class="profile-links">
+          <a href="mailto:hpu8@gatech.edu">hpu8@gatech.edu</a>
+          <span class="sep">/</span>
+          <a href="assets/Huanzhi_Pu_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+          <span class="sep">/</span>
+          <a href="https://github.com/CharliePu" target="_blank" rel="noopener">GitHub</a>
+          <span class="sep">/</span>
+          <a href="https://www.linkedin.com/in/huanzhi-pu-2641881b9/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <img
+        src="assets/headshot.png"
+        alt="Huanzhi Pu"
+        class="profile-photo"
+      />
+    </header>
+
+    <div class="bio">
+      <p>
+        I am a Computer Science Ph.D. student at the Georgia Institute of Technology, where I work in the
+        <a href="https://hparch.gatech.edu/" target="_blank" rel="noopener">High Performance Architecture (HPArch) Lab</a>
+        advised by <a href="https://www.cc.gatech.edu/~hyesoon/" target="_blank" rel="noopener">Prof. Hyesoon Kim</a>.
+        Prior to starting my Ph.D., I completed my M.S. (2026) and B.S. (2024) in Computer Science at Georgia Tech.
+      </p>
+      <p>
+        My research focuses on <strong>GPU architecture</strong>, <strong>GPU and ML compilers</strong>,
+        <strong>GPU binary lifting and analysis</strong>, and <strong>hardware/software co-design</strong>—particularly
+        understanding how GPU kernels execute at the instruction level and retargeting GPU workloads across architectures.
+      </p>
+      <div class="status-note">
+        I am looking for a <strong>Summer 2027 research internship</strong> in GPU architecture, GPU/ML compilers,
+        hardware/software co-design, or performance analysis. Feel free to reach out at
+        <a href="mailto:hpu8@gatech.edu">hpu8@gatech.edu</a>.
+      </div>
+    </div>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <ul class="pub-list">
+        <li class="pub-item">
+          <span class="pub-title">CuLifter: Lifting GPU Binaries to Typed IR</span>
+          <div class="pub-authors">
+            Jisheng Zhao*, <strong>Huanzhi Pu</strong>*, Shinnung Jeong, Chihyo Ahn, Hyesoon Kim
+          </div>
+          <div class="pub-meta">
+            <span class="venue-tag">MICRO 2026</span>
+            <span class="pub-venue">59th IEEE/ACM International Symposium on Microarchitecture, 2026</span>
+            <a class="pub-link" href="https://arxiv.org/abs/2604.27486" target="_blank" rel="noopener">arXiv</a>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-title">Inside VOLT: Designing an Open-Source GPU Compiler</span>
+          <div class="pub-authors">
+            Shinnung Jeong, Chihyo Ahn, <strong>Huanzhi Pu</strong>, Jisheng Zhao, Hyesoon Kim, Blaise Tine
+          </div>
+          <div class="pub-meta">
+            <span class="venue-tag">CC 2026</span>
+            <span class="pub-venue">ACM SIGPLAN International Conference on Compiler Construction (Tool Paper), 2026</span>
+            <a class="pub-link" href="https://doi.org/10.1145/3771775.3786275" target="_blank" rel="noopener">DOI</a>
+            <a class="pub-link" href="https://arxiv.org/abs/2511.13751" target="_blank" rel="noopener">arXiv</a>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-title">TensorDynamic: Bridging Application- and Instruction-Level Fault Injection for DNN Tensor Core Execution</span>
+          <div class="pub-authors">
+            Yuxiao Jia, Euijun Chung, <strong>Huanzhi Pu</strong>, Ben Feinberg, Hyesoon Kim
+          </div>
+          <div class="pub-meta">
+            <span class="venue-tag">ISPASS 2026</span>
+            <span class="pub-venue">IEEE International Symposium on Performance Analysis of Systems and Software, 2026</span>
+            <a class="pub-link" href="https://doi.org/10.1109/ISPASS69572.2026.00017" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-title">FastTrackGPU: Static-Analysis–Guided Analytical Modeling for Softcore GPUs</span>
+          <div class="pub-authors">
+            Chihyo Ahn, Shinnung Jeong, Liam Paul Cooper, Ruobing Han, <strong>Huanzhi Pu</strong>, Nicholas Parnenzini, Jisheng Zhao, Blaise Tine, Hyesoon Kim
+          </div>
+          <div class="pub-meta">
+            <span class="venue-tag">IEEE CAL 2026</span>
+            <span class="pub-venue">IEEE Computer Architecture Letters, vol. 25, no. 1, pp. 162–165, 2026</span>
+            <a class="pub-link" href="https://doi.org/10.1109/LCA.2026.3677349" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-title">Hardware vs. Software Implementation of Warp-Level Features in Vortex RISC-V GPU</span>
+          <div class="pub-authors">
+            <strong>Huanzhi Pu</strong>, Rishabh Ravi, Shinnung Jeong, Udit Subramanya, Euijun Chung, Jisheng Zhao, Chihyo Ahn, Hyesoon Kim
+          </div>
+          <div class="pub-meta">
+            <span class="venue-tag">DATE 2025 Workshop</span>
+            <span class="pub-venue">Design, Automation &amp; Test in Europe (OSSMPIC Workshop), 2025</span>
+            <a class="pub-link" href="https://arxiv.org/abs/2505.03102" target="_blank" rel="noopener">arXiv</a>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-title">VortexSynth: Profile-Guided Benchmark Reconstruction for GPU Architecture Research</span>
+          <div class="pub-authors">
+            <strong>Huanzhi Pu</strong>*, Chulhyung Park*, Chihyo Ahn, Ramyad Hadidi, Hyesoon Kim
+          </div>
+          <div class="pub-meta">
+            <span class="venue-tag">Preprint</span>
+            <span class="pub-venue">arXiv preprint, 2026</span>
+            <a class="pub-link" href="https://arxiv.org/abs/2610.12661" target="_blank" rel="noopener">arXiv</a>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-title">AsyncSparse: Accelerating Sparse Matrix-Matrix Multiplication on Asynchronous GPU Architectures</span>
+          <div class="pub-authors">
+            Jie Liu, <strong>Huanzhi Pu</strong>, Zhiru Zhang
+          </div>
+          <div class="pub-meta">
+            <span class="venue-tag">Preprint</span>
+            <span class="pub-venue">arXiv preprint, 2026</span>
+            <a class="pub-link" href="https://arxiv.org/abs/2604.17834" target="_blank" rel="noopener">arXiv</a>
+          </div>
+        </li>
+      </ul>
+      <p class="pub-note">* Indicates co-first authorship.</p>
+    </section>
+
+    <section id="research">
+      <h2>Research Overview</h2>
+      <div class="project-list">
+        <div class="project-item">
+          <div class="project-header">
+            <span class="project-title">CuLifter: Lifting GPU Binaries to Typed IR</span>
+            <span class="project-tag">HPArch Lab · Georgia Tech</span>
+          </div>
+          <p class="project-desc">
+            Binary translator that lifts NVIDIA GPU binaries (SASS) to typed LLVM IR through a multi-stage pipeline
+            that reconstructs SIMT control flow, restores register types, and normalizes architecture-specific instruction patterns.
+          </p>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <span class="project-title">CUDA on Non-NVIDIA Platforms (CuPBoP &amp; VOLT)</span>
+            <span class="project-tag">HPArch Lab · Georgia Tech</span>
+          </div>
+          <p class="project-desc">
+            Open-source compiler toolchain extensions for compiling CUDA programs to CPU and RISC-V GPU (Vortex) targets,
+            including support for cooperative groups, warp-level primitives, and atomic operations.
+          </p>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <span class="project-title">VortexSynth: Profile-Guided Benchmark Reconstruction</span>
+            <span class="project-tag">HPArch Lab · Georgia Tech</span>
+          </div>
+          <p class="project-desc">
+            Profile-guided LLM agent workflow that reconstructs and migrates closed-source robotics GPU workloads to the
+            Vortex RISC-V GPU, building a robotics kernel benchmark suite for GPU architecture research.
+          </p>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <span class="project-title">Sparse Matrix Kernels on GPUs</span>
+            <span class="project-tag">Zhang Research Group · Cornell University (2023–2025)</span>
+          </div>
+          <p class="project-desc">
+            Implemented sparse matrix storage formats and CUDA SpMV kernels, evaluating performance characteristics across
+            SuiteSparse workloads under Prof. Zhiru Zhang.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="entry-list">
+        <div class="entry-item">
+          <div class="entry-row">
+            <span class="entry-title">Georgia Institute of Technology</span>
+            <span class="entry-date">Aug 2026 – Present (Expected May 2030)</span>
+          </div>
+          <div class="entry-sub">Ph.D. in Computer Science · Advisor: Prof. Hyesoon Kim</div>
+        </div>
+
+        <div class="entry-item">
+          <div class="entry-row">
+            <span class="entry-title">Georgia Institute of Technology</span>
+            <span class="entry-date">May 2026</span>
+          </div>
+          <div class="entry-sub">M.S. in Computer Science (Computing Systems) · GPA: 3.92 / 4.0</div>
+        </div>
+
+        <div class="entry-item">
+          <div class="entry-row">
+            <span class="entry-title">Georgia Institute of Technology</span>
+            <span class="entry-date">May 2024</span>
+          </div>
+          <div class="entry-sub">B.S. in Computer Science (Theory, Systems &amp; Architecture) · GPA: 3.93 / 4.0</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <div class="entry-list">
+        <div class="entry-item">
+          <div class="entry-row">
+            <span class="entry-title">CS 8803: GPU Software and Hardware — Teaching Assistant</span>
+            <span class="entry-date">2023 – 2026 (5 semesters)</span>
+          </div>
+          <div class="entry-sub">
+            Georgia Institute of Technology · Maintained a SASS-to-LLVM lifter for a thread-divergence course project,
+            held office hours, and advised students on CUDA optimization.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>Huanzhi Pu · Georgia Institute of Technology</span>
+      <span>Last updated November 2026</span>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const btn = document.getElementById("theme-toggle");
+      function updateLabel() {
+        const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+        btn.textContent = isDark ? "Light" : "Dark";
+      }
+      updateLabel();
+      btn.addEventListener("click", function () {
+        const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+        if (isDark) {
+          document.documentElement.removeAttribute("data-theme");
+          localStorage.setItem("theme", "light");
+        } else {
+          document.documentElement.setAttribute("data-theme", "dark");
+          localStorage.setItem("theme", "dark");
+        }
+        updateLabel();
+      });
+    })();
+  </script>
+</body>
+</html>
